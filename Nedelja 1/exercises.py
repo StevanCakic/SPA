@@ -22,16 +22,14 @@
     # Isprobati operator eksponent (e)
         # Šta je rezultat 4e2
 
+# Treci dio
+# Casting
+# Isprobati par konverzija iz jednog tipa podatka u drugi
+
 # Zadatak 2
 # Ako je cijena računara 400e, štampati koliko treba odvojite za plaćanje PDVa
 # Štampati rezultat u sledećem formatu:
     # Cijena računara je 400e. Iznos PDVa je {pdv}, a cijena računara bez PDVa je {cijena bez PDVa}
-
-
-# Treci dio
-# Casting
-
-# Isprobati par konverzija iz jednog tipa podatka u drugi
 
 # Četvri dio
 # Stringovi
@@ -41,8 +39,6 @@
 
 # Zadatak 3
 # Iz unijetog stringa izvuci svaki treci karakter za prvih 10 karaktera stringa
-
-
 
 
 # Zadatak 4
@@ -56,11 +52,11 @@ Primjer: upper_lower(“Hi Mr. Rober. How are you today?”), vraća (19, 4), 19
 # Korisnik unosi tri broja.
 # Naći minimum i maksimum među unijetim brojevima i rezultat prikazati korisniku
 
-# Zadatak 7
+# Zadatak 6
 # Napisati program koji racuna zbir parnih i proizvod neparnih brojeva od 1 do 15
 # Takodje, prikazati koliko ima parnih, a koliko neparnih brojeva iz tog segmenta
 
-# Zadatak 8
+# Zadatak 7
 '''
 Narcissistic Number je broj čija suma cifara (tog broja) stepenova sa njegovim
 brojem cifara daje isti taj broj.
@@ -72,7 +68,7 @@ Primjer 2: 1634 (4 cifre):
 Vaš kod treba da vrati true ili false u zavisnosti od toga da li je broj Narcissitic ili nije. Input je uvijek validan broj.
 
 '''
-# Zadatak 9
+# Zadatak 8
 
 '''
 Napisati program koji provjerava da li se zadati broj nalazi u zadatom segmentu.
@@ -81,7 +77,7 @@ ran_inclusive (-10, 13, -25) vraća False jer je -25 manji od -10, a samim tim i
 
 '''
 
-# Zadatak 10
+# Zadatak 9
 
 '''
 Napisati program koji za unijeti URL (string), izvlači (parsira) samo domain name i vraća ga kao string. Pretpostaviti da korisnik unosi ispravan URL.
