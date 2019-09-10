@@ -127,36 +127,3 @@ def even_odd():
     print(f"Number of even numbers: {num_even} and sum is {suma}, number of odd numbers:{num_odd} and product is {product}.")
 
 even_odd()
-
-# Zadatak 7
-'''
-Narcissistic Number je broj čija suma cifara (tog broja) stepenova sa njegovim
-brojem cifara daje isti taj broj.
-
-Primjer 1: 153 (3 cifre)
-1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
-Primjer 2: 1634 (4 cifre):
-1^4 + 6^4 + 3^4 + 4^4 = 1 + 1296 + 81 + 256 = 1634
-Vaš kod treba da vrati true ili false u zavisnosti od toga da li je broj Narcissitic ili nije. Input je uvijek validan broj.
-
-'''
-# Zadatak 8
-
-'''
-Napisati program koji provjerava da li se zadati broj nalazi u zadatom segmentu.
-Primjer: ran_inclusive(3, 10, 5) vraća True jer je 3 <= 5 <= 10, 
-ran_inclusive (-10, 13, -25) vraća False jer je -25 manji od -10, a samim tim i od 13, pa nije iz zadatog segmenta
-
-'''
-
-# Zadatak 9
-
-'''
-Napisati program koji za unijeti URL (string), izvlači (parsira) samo domain name i vraća ga kao string. Pretpostaviti da korisnik unosi ispravan URL.
-
-Primjeri:
-get_domain("http://github.com/carbonfive/raygun"), izlaz "github.com"
-get_domain("https://google.com"), izlaz "google.com"
-get_domain("http://github.com/carbonfive/raygun"), izlaz "github.com"
-get_domain("http://www.zombie-bites.com"), izlaz "zombie-bites.com"
-'''
