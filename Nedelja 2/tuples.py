@@ -6,9 +6,12 @@
 
 # Isprobati da dodate, izmijenite ili obrišete element
 
+tuple = (1, 2, 3)
+# print(tuple[1])
+
 # Sta se desava kada je duzina torke 1
-# torka = (1)
-# print(torka)
+torka = (1,)
+print(type(torka))
 
 # Uporediti dir(tuple) i dir(list)
 
@@ -20,20 +23,21 @@ import sys
 
 # Nas zanima sys.getsizeof
 
-# print(help(sys.getsizeof))
+print(help(sys.getsizeof))
 
 lista = [1, 2, 3, "a", "b", "c", True, 2.73]
 torka =  (1, 2, 3, "a", "b", "c", True, 2.73)
 
-print(sys.getsizeof(lista))
-print(sys.getsizeof(torka))
+print("   "+str(sys.getsizeof(lista)))
+print("   "+str(sys.getsizeof(torka)))
 '''
 
 # Mjerenje kreiranja listi i torki
 
-'''
+
 import timeit
 
+print(help(timeit.timeit))
 # kreira 1000000 listi [1,2,3,4,5] i vrati koliko vremena je potrebno za izvrsavanje ovakvog koda
 list_test = timeit.timeit(stmt="[1,2,3,4,5]", number=1000000)
 
@@ -42,7 +46,7 @@ tuple_test = timeit.timeit(stmt="(1,2,3,4,5)", number=1000000)
 
 print("List time: ", list_test)
 print("Tuple time: ", tuple_test)
-'''
+
 
 # Tuple destructuring
 
