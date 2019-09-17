@@ -20,7 +20,8 @@ def print_food(food):
 # fruits = ["apple", "banana", "cherry"]
 # print_food(fruits)
 
-def ime_prezime(ime="Stevan", prezime="Čakić"):
+def ime_prezime(ime="Marko", prezime="Markovic"):
     return f'{ime} {prezime}'
 
+print("")
 print(ime_prezime(prezime="Prezime", ime="Ime"))

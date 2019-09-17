@@ -46,7 +46,7 @@ print("Tuple time: ", tuple_test)
 
 # Tuple destructuring
 
-# ime, prezime, godine = ("Stevan", "Čakić", 25)
+# ime, prezime, godine = ("Marko", "Marković", 25)
 
 # Ovo je moguce i za liste, isprobajte
 # Sta ako je manje elemenata nego promjenjlivih, a sta ako ih je vise?
