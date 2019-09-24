@@ -16,10 +16,12 @@ print(lista)
 a = lista.pop(0)
 print(a)
 print(lista)
+
 # Treci dio
 # Kreirati matricu 3x3
 # Kako biste izdvojili prvu vrstu matrice?
 # A prvu kolonu?
+
 matrix = [[1,2,3], [4,5,6], [7,8,9] ]
 first_column = [row[0] for row in matrix]
 print(first_column)

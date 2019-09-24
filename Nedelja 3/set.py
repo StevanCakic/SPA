@@ -1,14 +1,18 @@
 # Skupovi
 
-'''
-skup1 = set()
-skup2 = set()
+# moze i skup1 = {1,2,3}
+skup1 = set([1,2,1])
+skup2 = set([1,2,3])
 
 skup1.add(1)
 skup1.add(2)
+
 skup2.add(1)
 skup2.add(2)
 skup2.add(3)
+
+print(skup1)
+print(skup2)
 
 # Kako da napravimo ovo u dvije linije koda, da ne dodajemo jedan po jedan element?
 
@@ -33,4 +37,4 @@ print(skup2)
 lista = [1,1,1,2,2,3]
 print(set(lista))
 
-'''
+
