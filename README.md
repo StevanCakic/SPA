@@ -22,10 +22,14 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Liste
 - Torke
 - Funkcije
+- Zadaci
+- Domaći 2
 
 # Treća sedmica
 - Dictionaries
 - Sets (skupovi)
 - List comprenhension
 - Rad sa falovima
+- Zadaci
+- Domaći 3
 
