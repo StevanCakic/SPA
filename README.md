@@ -18,3 +18,14 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Zadaci
 - Domaći 1
 
+# Druga sedmica
+- Liste
+- Torke
+- Funkcije
+
+# Treća sedmica
+- Dictionaries
+- Sets (skupovi)
+- List comprenhension
+- Rad sa falovima
+
