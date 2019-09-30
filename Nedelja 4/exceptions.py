@@ -4,29 +4,28 @@
 '''
 try:
     print(2 + "3")
-except :
+except:
     print("Something went wrong")
 else: # izvrsi se ako se try uspjesno izvrsi
     print("Else")
 finally: # izvrsi se bez obzira na sve
     print("Finally")
-'''
 
 # IOError
-'''
+
 try:
-    f = open("file.txt", "w") # obrisati fajl i probati sta ce se desiti ako probamo
+    f = open("file.txt", "r") # obrisati fajl i probati sta ce se desiti ako probamo
                               # da procitamo fajl koji ne postoji
-    f.write("Tekst")
+    # f.write("Tekst")
 except:
-    print("Cant write to file")
+    print("Cant read file")
 else:
     print("Write to file was successful")
-'''
+
 
 # Check this :)
 
-'''
+
 def get_val_basic():
     try:
         input_user = int(input("Please enter an integer:"))
@@ -39,7 +38,9 @@ def get_val_basic():
 
 get_val_basic()
 
+
 def get_val():
+    input_user = ""
     while True:
         try:
             input_user = int(input("Please enter an integer:"))
@@ -51,7 +52,7 @@ def get_val():
             break
         finally:
             print("This block executed")
-        print(input_user)
+    print(input_user)
 
 get_val()
 '''
@@ -60,7 +61,8 @@ get_val()
 
 import math
 
-print(math.sqrt(-1))
+# print(100/0)
+# print(math.sqrt(-1))
 
 # Kako ovo da rijesimo
 # Kako da "bacite izuzetak"

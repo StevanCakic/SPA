@@ -1,8 +1,8 @@
 import datetime
 # Prvi dio
 # Sta ako nazovete fajl kao modul?
-'''
-print(dir(datetime))
+
+# print(dir(datetime))
 # print(help(datetime.date))
 
 gvr = datetime.date(1951, 1, 31)
@@ -19,7 +19,7 @@ second_mill = datetime.date(2000, 1, 1)
 dt = datetime.timedelta(100)
 
 print(second_mill + dt)
-
+'''
 # Šta misliti kako biste vidjeli koje je datum bio prije 100 dana u odnosu na 1.1.2000.
 # TODO
 
@@ -27,11 +27,12 @@ print(second_mill + dt)
 # Drugi dio
 # Formatiranje datuma
 # Otvorimo dokument gdje se nalaze formati za datume
-'''
+
 gvr = datetime.date(1951, 1, 31)
 # Day name, Month name Day-#, Year
 
 # old way
+# https://docs.python.org/3/library/datetime.html
 print(gvr.strftime("%A, %B %d, %Y"))
 
 # new way
@@ -52,7 +53,7 @@ print(launch_datetime)
 
 # mozete provjeriti min/max time i date, kao i resolution, tj. min razliku izmedju vremena
 print(datetime.time.min)
-print(datetime.date.max)
+print(datetime.date.min)
 
 # Get current time:
 
@@ -70,9 +71,10 @@ print(type(moon_landing_datetime))
 date_difference = now - moon_landing_datetime
 print(date_difference.days)
 
+
 # ali nema years i months, kako to da rijesimo
 from dateutil.relativedelta import relativedelta
 date_difference_years = relativedelta(now, moon_landing_datetime).years
 print(date_difference_years)
 
-'''
+

@@ -7,7 +7,7 @@ with open("../assets/google_stock_data.csv", newline="") as file: # newline zbog
     print("datetime", "float", "  float", "  float", "  float", "  integer", "   float")
 
     # Konverzija tipova
-    '''
+
     from datetime import datetime
     result = []
 
@@ -22,7 +22,7 @@ with open("../assets/google_stock_data.csv", newline="") as file: # newline zbog
         result.append([date, open_price, high, low, close, volume, adj_close])
 
     print(result[0])
-    '''
+
 
     # Zadatak da izracunamo stock daily return, 
     # tj. procentualnu razliku za dva susjedna dana (adj close) 100 * [( A - B) / B]
