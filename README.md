@@ -9,8 +9,6 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Obnavljanje
 - Low level vs High level programski jezici
 - Šta je kompajler, a šta interpreter
-- Šta znači statically, a šta dinamicly typed kod programskog jezika
-- Šta su promjenljive, čemu služe
 - Šta je to tip podatka
 - Varijable, I/O primitivni tipovi podataka: brojevi, stringovi, boolean
 - Operatori
@@ -29,7 +27,12 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Dictionaries
 - Sets (skupovi)
 - List comprenhension
-- Rad sa falovima
+- Rad sa fajlovima
 - Zadaci
 - Domaći 3
 
+# Četvrta sedmica
+- Rad sa CSV fajlovima (google stocks)
+- Izuzeci (exceptions)
+- Zadaci
+- Domaći 4
