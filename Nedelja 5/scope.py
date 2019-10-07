@@ -2,7 +2,7 @@
 
 # Primjer 1
 # Local
-'''
+
 def fun():
     x = 3
     return x
@@ -51,4 +51,4 @@ def func():
 print("x prije poziva funkcije: ", x)
 func()
 print("x van funkcije je: ", x)
-'''
+
