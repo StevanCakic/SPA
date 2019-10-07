@@ -36,3 +36,10 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Izuzeci (exceptions)
 - Zadaci
 - Domaći 4
+
+# Peta sedmica
+- Functional programming
+- Scope
+- Object oriented programming, part 1
+- Zadaci
+- Test 1
