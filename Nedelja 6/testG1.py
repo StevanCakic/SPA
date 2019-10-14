@@ -96,6 +96,6 @@ with open("cc_info.txt", newline="") as f:
     for kartica in kartice:
         try:
             cc_number = int(kartica)
-            print(cc_number)
+            print(validacija_kartice(cc_number))
         except Exception as e:
-            print("Greska: " + str(e))
+            print("Vasa kartica mora da sadrzi samo cifre.")
