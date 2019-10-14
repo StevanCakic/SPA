@@ -1,60 +1,101 @@
-# Prvi
 def doors(n):
     lista = []
     for i in range(n):
         lista.append(0)
-    
-    for student in range(1, n + 1):
-        for(i, door) in enumerate(lista):
-            if (i + 1) % student == 0: 
-                if door == 0:
-                    lista[i] = 1
+    for student in range(1, n+1):
+        for pozicija, stanje in enumerate(lista):
+            if (pozicija + 1) % student == 0:
+                if stanje == 0:
+                    lista[pozicija] = 1
                 else:
-                    lista[i] = 0
+                    lista[pozicija] = 0
 
-    number_of_ones = 0
+    suma = 0
     for i in lista:
-        if i == 1:
-            number_of_ones += 1
-    print(number_of_ones)
+        suma += i
 
+    return suma
 
-doors(5)
+print(doors(10))
 
+def get_digits(str):
+    lista = []
+    for char in str:
+        if char.isdigit():
+            lista.append(char)
+    
+    spojena = "".join(lista)
+    return int(spojena)
 
-# Cetvrti
-def validacija_kartice(broj_kartice):
-    duplirani = []
-    broj_kartice = str(broj_kartice)
+print(type(get_digits("1212 hdadah12")))
+
+def check_password(input_string, min_len, flagUpper=False, flagLower=False, flagDigit=False):
+    flagUpper_result = False
+    flagLower_result = False
+    flagDigit_result = False
+    if min_len <= len(input_string):
+        if flagUpper:
+            for char in input_string:
+                if char.isupper():
+                    flagUpper_result = True
+        else:
+            flagUpper_result = True
+        
+        if flagLower:
+            for char in input_string:
+                if char.islower():
+                    flagLower_result = True
+        else:
+            flagLower_result = True
+
+        if flagDigit:
+            for char in input_string:
+                if char.isdigit():
+                    flagDigit_result = True
+        else:
+            flagDigit_result = True
+        if not flagDigit_result:
+            print("Vas password mora da sadrzi bar jednu cifru")
+        if not flagLower_result:
+            print("Vas password mora da sadrzi bar jedno malo slovo")
+        if not flagUpper_result:
+            print("Vas password mora da sadrzi bar jedno veliko slovo")
+        return flagUpper_result and flagLower_result and flagDigit_result
+    else:
+        return False
+
+print(check_password("Passwadadad", 7, True, False, False))
+
+def validacija_kartice(kartica):
+    lista = []
+    broj_kartice = str(kartica)
     if len(broj_kartice) == 16:
-        for i, v in enumerate(kartica):
+        for i, v in enumerate(broj_kartice):
             v = int(v)
             if i % 2 == 0:
-                if v*2 > 9:
+                if v * 2 > 9:
                     doubled = v * 2
-                    novi_broj = (doubled % 10)+(doubled//10)
-                    duplirani.append(novi_broj)
+                    nova_cifra = (doubled // 10) + (doubled % 10)
+                    lista.append(nova_cifra)
                 else:
-                    duplirani.append(v*2)
+                    lista.append(v*2)
             else:
-                duplirani.append(v)
+                lista.append(v)
         suma = 0
-        for i in duplirani:
+        for i in lista:
             suma += int(i)
-        
-        if suma%10 == 0:
+        if suma % 10 == 0:
             return "Vasa kartica je validna"
         else:
             return "Vasa kartica nije validna"
     else:
-        return "Vasa kartica nije validna. Nema tacno 16 cifara"
+        return "Vasa kartica nije validna. Ima " + str(len(broj_kartice)) + " cifara."
 
-
-with open("cc_info.txt",newline="") as f:
-    kartice = f.read().split("\n") # nekad ne radi ovo sa newline, pa moramo ovako
+with open("cc_info.txt", newline="") as f:
+    kartice = f.read().split("\n")
     for kartica in kartice:
         try:
             cc_number = int(kartica)
-            print(validacija_kartice(cc_number))
+            print(cc_number)
         except Exception as e:
-            print("Nevalidno unesena kartica")
+            print("Greska: " + str(e))
