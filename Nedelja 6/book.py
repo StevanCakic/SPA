@@ -8,22 +8,30 @@ class Book:
         return f'Naslov: {self.title}, Autor: {self.author}, Broj stranica: {self.pages}'
     def __len__(self):
         return self.pages
+    
     def __del__(self):
+        print(self.title)
         print("Book has been deleted")
+    
+    def __eq__(self, other):
+        print("Calling equal")
+        return self.title == other.title and self.author == other.author
 
 
-book = Book("Uvod u programiranje", "Marko Markovic", 240)
-book2 = Book("Uvod u programiranje", "Marko Markovic", 140)
+book1 = Book("Uvod u programiranje", "Marko Markovic", 240)
+book2 = Book("Web programiranje", "Marko Markovic", 140)
 books = []
-books.append(book)
+books.append(book1)
 books.append(book2)
 
 lista = [1, 2, 3]
 print(lista) # kako Python zna kako da stampa listu?
-print(book)
-
+print(book1)
+print("--------")
 for book in books:
     print(book)
 
-print(len(book))
-del book
+print(len(book2))
+# del book2
+
+print(book1 == book2)

@@ -14,3 +14,14 @@ class Admin(User):
         print("I'm Admin")
     def delete_user(self):
         print("I can delete User")
+    
+user1 = User()
+print("----------")
+admin1 = Admin()
+print("----------")
+user1.who_am_i()
+print("----------")
+admin1.who_am_i()
+print("----------")
+admin1.login()
+print("----------")

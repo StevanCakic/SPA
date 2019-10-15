@@ -13,3 +13,10 @@ class Rectangle:
 class Square(Rectangle):
     def __init__(self, length):
         super().__init__(length, length)
+
+rectangle1 = Rectangle(3, 2)
+print(rectangle1.area())
+print(rectangle1.perimeter())
+
+square1 = Square(5)
+print(square1.area())

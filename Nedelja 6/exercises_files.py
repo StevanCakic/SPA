@@ -29,6 +29,23 @@
 # Preporuka, koristiti list comprehension, funkcija za konverziju stringa u torku je tuple
 # Hint: tup = tuple(some_str.split(",")) - konvertuje npr. "abcd,abbccd" -> ("abcd","abbccd")
 
+with open("filmovi.txt") as f:
+    filmovi = f.read().split("\n")
+    # print(filmovi)
+    filmovi_list_of_dict = []
+    for film in filmovi:
+        film_parts = film.split(";")
+        film_dict = { "title": film_parts[0], "grade": float(film_parts[1]),
+                      "year": int(film_parts[2]), "genres": film_parts[3].split(",") }
+        filmovi_list_of_dict.append(film_dict)
+    for film in filmovi_list_of_dict:
+        print(film)
+    filtered_by_term = list(filter(lambda film: film["title"].startswith("The"), filmovi_list_of_dict))
+    print("Movies filtered by search term: The")
+    for film in filtered_by_term:
+        print(film)
 
-
-
+with open("filmovi.txt", mode="a") as f:
+    f.write("\nThe Godfather;9.1;1972;drama,crime\nLord of the rings: the return of the king;8.9;2004;adventure")
+    
+        
