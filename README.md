@@ -43,3 +43,11 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Object oriented programming, part 1
 - Zadaci
 - Test 1
+
+# Sesta sedmica
+- OOP, part 2 (inheritance, special methods)
+- Test 1, ispravka
+- Files
+
+# Sedma sedmica
+- 

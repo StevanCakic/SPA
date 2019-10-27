@@ -13,4 +13,4 @@ with open('../assets/names.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     # print(reader.fieldnames)
     for row in reader:
-        print(row['first_name'])
+        print(dict(row))
