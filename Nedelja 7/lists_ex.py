@@ -78,25 +78,25 @@ class LinkedList:
                 self.head = current.next
 
     def delete_from_pos(self, pos):
-        current = self.head
-        if pos == 0:
-            self.head = current.next
-            current = None
-            return
-        
-        previous = None
-        count = 1
+        cur_node = self.head
 
-        while current and count != pos:
-            previous = current
-            current = current.next
+        if pos == 0:
+            self.head = cur_node.next
+            cur_node = None
+            return
+
+        prev = None
+        count = 0
+        while cur_node and count != pos:
+            prev = cur_node 
+            cur_node = cur_node.next
             count += 1
 
-        if current is None:
+        if cur_node is None:
             return
 
-        previous.next = current.next
-        current = None
+        prev.next = cur_node.next
+        cur_node = None
     
     def len_iterative(self):
         count = 0
@@ -106,10 +106,15 @@ class LinkedList:
             count += 1
         return count
 
-    def len_recursive(self, node):
-        if node is None:
+    def getCountRec(self, node): 
+        if not node: # Base case 
             return 0
-        return 1 + self.len_recursive(node.next)
+        else: 
+            return 1 + self.getCountRec(node.next) 
+  
+    # A wrapper over getCountRec() 
+    def len_recursive(self): 
+       return self.getCountRec(self.head)
 
 # Test cases
 # Set up some Elements
@@ -154,13 +159,21 @@ print("-------------")
 ll.print_list()
 print("-------------")
 
-'''
+
 # Test delete
-ll.delete(1)
+ll.delete_val(1)
 # Should print 2 now
 print(ll.get_from_position(1).value)
 # Should print 4 now
 print(ll.get_from_position(2).value)
 # Should print 3 now
 print(ll.get_from_position(3).value)
-'''
+print("-------------")
+ll.delete_from_pos(1)
+print(ll.print_list())
+
+print("-------------")
+print(ll.len_iterative())
+
+print("-------------")
+print(ll.len_recursive())
