@@ -50,4 +50,7 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Files
 
 # Sedma sedmica
-- 
+- Složenost algoritama (vremenska)
+- Rekurzija
+- Stack
+- Queue
