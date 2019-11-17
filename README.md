@@ -54,3 +54,11 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Rekurzija
 - Stack
 - Queue
+
+# Osma sedmica
+- Kolokvijum
+- Ispravak kolokvijuma
+
+# Deveta sedmica
+- Singly linked lists
+- Circular lists
