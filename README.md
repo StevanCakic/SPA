@@ -57,8 +57,15 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 
 # Osma sedmica
 - Kolokvijum
-- Ispravak kolokvijuma
 
 # Deveta sedmica
+- Ispravak kolokvijuma
+
+# Deseta sedmica
 - Singly linked lists
 - Circular lists
+
+# Jedanaesta sedmica
+- Binary search
+- Bubble sort
+
