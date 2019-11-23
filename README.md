@@ -68,4 +68,6 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 # Jedanaesta sedmica
 - Binary search
 - Bubble sort
+- Selection sort
+- Binary tree
 
