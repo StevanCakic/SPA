@@ -1,24 +1,23 @@
+def selection_sort(arr):
+    for i in range(0, len(arr) - 1):
+        for j in range(i + 1, len(arr)):
+            if arr[i] > arr[j]:
+                tmp = arr[j]
+                arr[j] = arr[i]
+                arr[i] = tmp
+    return arr
 
-def selection_sort(data):
-    for i in range(0, len(data) - 1):
-        for j in range(i + 1, len(data)):
-            if data[i] > data[j]:
-                # data[i], data[j] = data[j], data[i]
-                tmp = data[j]
-                data[j] = data[i]
-                data[i] = tmp
-    return data
+def bubble_sort(arr): 
+    n = len(arr) 
+    for i in range(n): 
+        # Last i elements are already in place 
+        for j in range(0, n-i-1): 
+            if arr[j] > arr[j+1] : 
+                arr[j], arr[j+1] = arr[j+1], arr[j] 
+    return arr
 
-def bubble_sort(data):
-    n = len(data)
-    for i in range(n):
-        for j in range(0, n - i - 1):
-            if data[j] > data[j+1]:
-                data[j], data[j+1] = data[j+1], data[j]
-    return data
+# Merge sort
+# Quick sort
 
-
-print(selection_sort([3, 1, 7, 2]))
-print(bubble_sort([3, 1, 7, 2]))
-
-
+print(selection_sort([1,5,3,2]))
+print(bubble_sort([1,5,3,2]))
