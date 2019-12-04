@@ -1,0 +1,14 @@
+# 1. Izracunati proizvod kvadrata elemenata sa dijagonale unijete matrice
+    # (samo kvadratma matrica ima ispravnu dijagonalu)
+
+# 2. Naci drugi najmanji element u matrici
+
+# OOP
+    # Enkapsulacija
+    # Polimorfizam
+    # Static atribut
+    # Static method
+    # Apstraktna klasa
+
+# 3. Pregled kompletnog gradiva i konsultacije oko projekta
+
