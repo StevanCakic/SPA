@@ -71,3 +71,8 @@ Kod koji prati vježbe iz predmeta Strukture podataka i algoritmi / Programiranj
 - Selection sort
 - Binary tree
 
+# Dvanaesta sedmica
+- Graph
+- Matrix
+- JSON
+
