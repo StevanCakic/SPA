@@ -60,7 +60,7 @@ def drawDot(x,y,color):
 #Main Program Starts Here
 radius = 180
 color = "#000000"
-total = 150
+total = 300
 totalIn = 0
 
 drawSquare(-radius, radius, 2*radius)
