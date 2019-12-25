@@ -184,6 +184,15 @@ class BinaryTree:
     
         return root
 
+    def _size(self, root):
+        if root is None:
+            return 0
+        else:
+            return self._size(root.left) + self._size(root.right) + 1
+
+    def size(self):
+        return self._size(self.root)
+
     def get_num_leaf(self, current):
         if not current:
             return 0
@@ -232,3 +241,4 @@ bin_tree.insert(1)
 print(bin_tree.print_tree("levelorder"))
 bin_tree.delete_node(bin_tree.root, 1)
 print(bin_tree.print_tree("levelorder"))
+print(bin_tree.size())
